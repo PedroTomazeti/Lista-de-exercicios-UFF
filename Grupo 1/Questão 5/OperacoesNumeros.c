@@ -7,18 +7,20 @@ double n1, n2;
 
 
 int main(){
-	//Os números decimais devem ser colocado com vírgula e não com ponto.
-	//Exemplo: 6,31 e não 6.31 como geralmente roda.
+	//Os nÃºmeros decimais devem ser colocado com vÃ­rgula e nÃ£o com ponto.
+	//Exemplo: 6,31 e nÃ£o 6.31 como geralmente roda.
 	setlocale(LC_ALL, "PORTUGUESE");
-	printf("Insira o primeiro número: ");
+	printf("Insira o primeiro nÃºmero: ");
 	scanf("%lf", &n1);
-	printf("Insira o segundo número: ");
+	printf("Insira o segundo nÃºmero: ");
 	scanf("%lf", &n2);
-	printf("\n\t\t==========OPERAÇÕES==========\n");
-	printf("A soma dos números é: %.3lf\n", n1+n2);
-	printf("O produto do primeiro número pelo quadrado do segundo: %.3lf\n", n1*pow(n2,2));
-	printf("O quadrado do primeiro número: %.3lf\n", pow(n1,2));
+	printf("\n\t\t==========OPERAÃ‡Ã•ES==========\n");
+	printf("A soma dos nÃºmeros Ã©: %.3lf\n", n1+n2);
+	printf("O produto do primeiro nÃºmero pelo quadrado do segundo: %.3lf\n", n1*pow(n2,2));
+	printf("O quadrado do primeiro nÃºmero: %.3lf\n", pow(n1,2));
 	printf("A raiz quadrada da soma dos quadrados: %.3lf\n", sqrt(pow(n1,2)+pow(n2,2)));
-	printf("O seno da diferença do primeiro número pelo segundo(em radianos): %.3lf\n", sin(n1-n2));
-	printf("O módulo do primeiro número: %.3lf", fabs(n1));
+	printf("O seno da diferenÃ§a do primeiro nÃºmero pelo segundo(em radianos): %.3lf\n", sin(n1-n2));
+	printf("O mÃ³dulo do primeiro nÃºmero: %.3lf", fabs(n1));
+	
+	return 0;
 }
